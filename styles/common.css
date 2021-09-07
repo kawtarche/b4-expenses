@@ -1,0 +1,11 @@
+/* variables css communes */
+:root {
+    --size-title: 16px;
+    --secondary-text-color: #808080;
+    --main-text-color: #444;
+    --primary-button-color:  #444;
+    --secondary-button-color: #696969;
+}
+.btn, .btn-large, .btn-small {
+    background-color: var(--primary-button-color);
+}

@@ -6,16 +6,89 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Composants</title>
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/common.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+          rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/components.css">
 </head>
 <body>
-
+<h3>Bienvenue dans libs Kaw</h3>
 <!--1. Choisir le type des dépenses-->
+<!-- navigation -->
+<section class="navigation">
+    <span><i class="material-icons">chevron_left</i></span>
+    <span class="title">title</span>
+    <span><i class="material-icons">close</i></span>
+</section>
+
+<section class="test-container">
+    <h5>Rouded icon</h5>
+    <!--    card permet d'avoir l'effet ombre-->
+    <div class="icon-round-container card">
+        <i class="icon material-icons">local_atm</i>
+    </div>
+
+</section>
+
+
+
+<!-- card-icon -->
+<section class="test-container">
+    <h5>Card icon</h5>
+    <section class="card">
+    <span class="icon-container">
+                <i class="material-icons">payment</i>
+    </span>
+        <span class="description">
+        <span class="title-description">Title</span>
+        <span class="subtitle-description">Subtitle</span>
+    </span>
+    </section>
+</section>
+
+
+<!-- upload button (camera/gallery) -->
+<!--    CAMERA-->
+<section class="test-container">
+    <h5>Upload button</h5>
+    <section class="container-upload">
+        <span class="description-input"> Facture </span>
+        <button class="waves-effect waves-light btn icon-photo"><i class="material-icons">photo_camera</i></button>
+    </section>
+
+</section>
+
+
+<!--  items expenses  -->
+<section class="test-container">
+    <h5>Card icon</h5>
+    <section class="container-food">
+        <i class="material-icons">payment</i>
+        <div class="items-food">
+            <span class="type-food">Pêche jaune</span>
+            <span class="food-mesuration">2.5 kg</span>
+        </div>
+        <span class="price-food">6.9e </span>
+
+    </section>
+</section>
+
+
+<!-- progress bar -->
+<section class="test-container">
+    <h5>List item</h5>
+    <section class="progress-bar">
+        <div class="cercle active"></div>
+        <div class="cercle"></div>
+        <div class="cercle"></div>
+        <div class="cercle"></div>
+    </section>
+</section>
+
+</section>
 </body>
 </html>
