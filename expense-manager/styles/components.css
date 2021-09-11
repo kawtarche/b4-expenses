@@ -1,17 +1,29 @@
 /* test */
 section.test-container {
     margin: 12px;
+    margin-top: 50px;
+}
+
+section.test-container.full-with {
+    margin: 0;
+    margin-top: 50px;
+}
+
+section.test-container.full-with h5 {
+    margin-left: 12px;
 }
 
 section.test-container h5 {
     color: darkgoldenrod;
     margin-top: 20px;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 hr {
     margin-bottom: 20px;
 }
+
 /* navigation */
 
 section.navigation {
@@ -137,25 +149,66 @@ section.container-upload button.waves-effect {
 
 /*items expenses*/
 
-section.container-food{
+section.container-food {
     display: flex;
     flex-direction: row;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
 }
-section.container-food i.material-icons{
+
+section.container-food i.material-icons {
     padding-right: 18px;
+    font-size: 35px;
 }
 
 
-section.container-food div.items-food{
-    border-bottom: 1px solid var(--primary-button-color);
+section.container-food div.items-food {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-section.container-food div.items-food span.type-food{
-font-weight: bolder;
+section.container-food div.items-food span.type-food {
+    font-weight: bolder;
 }
 
 section.container-food span {
-    color: #444;}
+    color: #444;
+}
+
+
+/* Target-display */
+
+.outer-circle {
+    width: 30vw;
+    height: 30vw;
+    background-image: linear-gradient(
+            to right, rgb(9, 112, 26) 0%,
+            #4caf50 100%);
+}
+
+.inner-circle {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+}
+
+/* un tag html avec cette classe aura comme effet: */
+.circle-center {
+    /* cercle */
+    border-radius: 50%;
+    /* pour center: */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle .target {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-circle .target span.expenses {
+ border-bottom: 1px solid #cccccc;
+}
