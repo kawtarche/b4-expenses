@@ -181,8 +181,8 @@ section.container-food span {
 /* Target-display */
 
 .outer-circle {
-    width: 30vw;
-    height: 30vw;
+    width: 140px;
+    height: 140px;
     background-image: linear-gradient(
             to right, rgb(9, 112, 26) 0%,
             #4caf50 100%);
@@ -212,4 +212,47 @@ section.container-food span {
 
 .inner-circle .target span.expenses {
  border-bottom: 1px solid #cccccc;
+}
+
+
+/*stick-diagram*/
+section.diagram{
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    width: fit-content;
+    align-items: flex-end;
+}
+
+section.diagram .left {
+    width: 20px;
+    height: 80%;
+    background-color: var(--primary-button-color);
+}
+section.diagram .right {
+    width: 20px;
+    height: 40%;
+    background-color: var(--secondary-button-color);
+}
+
+section.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+section.description span.month{
+    font-weight: bolder;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+section.description span.score{
+
+    color: var(--secondary-button-color);
+}
+
+section.diagram-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
 }
