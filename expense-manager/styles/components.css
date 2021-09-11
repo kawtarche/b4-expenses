@@ -11,6 +11,7 @@ section.test-container.full-with {
 
 section.test-container.full-with h5 {
     margin-left: 12px;
+    text-transform: capitalize;
 }
 
 section.test-container h5 {

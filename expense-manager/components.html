@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Composants</title>
+    <!--   CSS for code display -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+          integrity="sha512-3xLMEigMNYLDJLAgaGlDSxpGykyb+nQnJBzbkQy2a0gyVKL2ZpNOPIj1rD8IPFaJbwAgId/atho1+LBpWu5DhA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
@@ -76,6 +80,18 @@
 
 <section class="test-container">
     <h5>Target-display</h5>
+    <pre>
+        <code class="html">
+                <div class="outer-circle circle-center card">
+                    <div class="inner-circle circle-center">
+                    <div class="target">
+                        <span class="expenses"> 65 € </span>
+                        <span class="total">350 €</span>
+                    </div>
+                    </div>
+                </div>
+        </code>
+    </pre>
     <!-- Target-display-->
     <div class="outer-circle circle-center card">
         <div class="inner-circle circle-center">
@@ -97,6 +113,13 @@
     </section>
 </section>
 
-</section>
+<!-- Code used to display html code example -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+    document.querySelectorAll("code").forEach(function (element) {
+        element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    });
+</script>
 </body>
 </html>
