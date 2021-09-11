@@ -6,23 +6,38 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Composants</title>
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/common.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
           rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/sucess.css">
+
 </head>
 <body>
-
 <!--(4./7./9./ Valider la saisie)-->
 <section class="navigation">
     <span><i class="material-icons">chevron_left</i></span>
-    <span class="title">title</span>
+    <span class="title">nouvelle dépense</span>
     <span><i class="material-icons">close</i></span>
 </section>
 
+<!--1) sucess img & paragraph-->
+<section class="sucess-icon">
+ <span class="check-icon"> <i class="icon material-icons">done</i> </span>
+    <p class="paragraph-sucess">La dépense déjeuner d'équipe client a été enregistrée avec succès </p>
+<!--2) buttom-->
+<a class=" bouton waves-effect waves-light btn">REVENIR A L'ACCEUIL</a>
+</section>
+<!--3) progress bar-->
+<section class="progress-bar">
+    <div class="cercle "></div>
+    <div class="cercle"></div>
+    <div class="cercle"></div>
+    <div class="cercle active"></div>
+</section>
 </body>
 </html>

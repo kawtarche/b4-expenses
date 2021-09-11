@@ -6,29 +6,70 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Composants</title>
-    <!--  CSS library   -->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
           rel="stylesheet">
-
-<!--  CSS B4Expenses  -->
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/components.css">
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/add-expense.css">
 </head>
-
-
 <body>
+
 <!--5. Saisir les informations générales sur les dépenses-->
 <section class="navigation">
-    <span class="icon"><i class="material-icons">chevron_left</i></span>
+    <span><i class="material-icons">chevron_left</i></span>
     <span class="title">nouvelle dépense</span>
-    <span class="icon"><i class="material-icons">close</i></span>
+    <span><i class="material-icons">close</i></span>
+</section>
+
+<!--1- champs de saisie-->
+<section class="enter-fields">
+<!--    obligatoires: imput-fields>input#id(type)+label#id(for)-->
+    <div class="input-field ">
+        <input id="title" class="materialize-textarea" type="text">
+        <label for="title">Titre*</label>
+    </div>
+
+    <div class="input-field ">
+        <input id="quantite" class="materialize-textarea" type="number">
+        <label for="quantite">Quantité*</label>
+    </div>
+
+    <div class="input-field ">
+        <input id="prix" class="materialize-textarea" type="number">
+        <label for="prix">Prix*</label>
+    </div>
+
+
+    <div class="input-field ">
+        <input id="date"class="materialize-textarea" type="date">
+        <label for="date">Date*</label>
+    </div>
+
+
+    <section class="container-upload">
+        <span class="description-input"> Facture </span>
+        <button class="waves-effect waves-light btn icon-photo"><i class="material-icons">photo_camera</i></button>
+    </section>
+
+
+    <div class="input-field ">
+        <textarea class="materialize-textarea"></textarea>
+        <label >Remarque</label>
+    </div>
+
+    <a class="submit waves-effect waves-light btn">SUIVANT</a>
+</section>
+
+<section class="progress-bar">
+    <div class="cercle "></div>
+    <div class="cercle"></div>
+    <div class="cercle active"></div>
+    <div class="cercle"></div>
 </section>
 
 </body>
 </html>
-
