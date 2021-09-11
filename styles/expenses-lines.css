@@ -1,0 +1,75 @@
+
+/*Bouton */
+
+section.progress-bar{
+    margin-top: 55px;
+}
+
+a.submit.waves-effect.waves-light.btn {
+    background-color: var(--secondary-button-color);
+}
+
+div.description-expenses-lines{
+    margin-top: 55px;
+}
+
+div.description-expenses-lines span {
+    font-weight: bold;
+
+}
+
+
+section.lines-container{
+    margin-top: 30px;
+}
+div.container-expenses-lines{
+    display: flex;
+}
+
+div.boutons a.new-line.submit.waves-effect.waves-light.btn {
+    background-color: white;
+    color: var(--secondary-text-color);
+    border: 1pm solid var(--secondary-text-color);
+}
+
+div.boutons a.validate.submit.waves-effect.waves-light.btn {
+    background-color: var(--secondary-button-color);
+}
+div.product-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-bottom: 15pm solid;
+}
+
+div.product {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+i.material-icons {
+    padding-right: 20px;
+    font-size: 50px;
+}
+
+div.boutons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+}
+
+div.boutons a.new-line.submit.waves-effect.waves-light.btn {
+    width: 80%;
+
+}
+div.boutons a.validate.submit.waves-effect.waves-light.btn {
+    width: 80%;
+    margin-top: 12px;
+}
+section.expenses-container{
+    padding: 25px;
+}

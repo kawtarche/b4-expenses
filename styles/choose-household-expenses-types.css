@@ -1,0 +1,26 @@
+/*2- Rouded icon*/
+
+div.icon-round-container.card {
+    margin-top: 44px;
+    margin-bottom: 25px;
+}
+
+p.description {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: var(--main-text-color);
+}
+
+/*3- choices*/
+section.choices {
+    margin-top: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 40px;
+}
+
+/*4- progress bar */
+section.progress-bar {
+    margin-bottom: 73px;
+}

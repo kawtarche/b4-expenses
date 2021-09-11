@@ -6,22 +6,56 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Composants</title>
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
           rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="java-scripts/add-expense-line.js"></script>
+
 </head>
 <body>
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/common.css">
+<link rel="stylesheet" href="styles/add.expense-line.css">
+<!-- Compiled and minified CSS -->
 
-<!--6. Saisir les informations générales sur chaque ligne des dépenses-->
+<!--6.1 Saisir les informations générales sur chaque ligne des dépenses-->
 <section class="navigation">
     <span><i class="material-icons">chevron_left</i></span>
-    <span class="title">title</span>
+    <span class="title">nouvelle dépense</span>
     <span><i class="material-icons">close</i></span>
+</section>
+
+<!--1- champs de saisie-->
+<section class="enter-fields">
+    <div class="fields">
+        <div class="text-description"><span>Détails de la dépense : "Courses rentrée scolaire" : </span>Nouvelle ligne
+            de dépense :
+        </div>
+        <div class="inputs">
+        <div class="input-field ">
+            <input id="produit" class="materialize-textarea" type="text">
+            <label for="produit">Produit</label>
+        </div>
+        <div class="input-field ">
+            <input id="prix" class="materialize-textarea" type="number">
+            <label for="prix" >Prix*</label>
+        </div>
+        <div class="input-field ">
+            <textarea class="materialize-textarea"></textarea>
+            <label>Remarque</label>
+        </div>
+        </div>
+    </div>
+    <a class="submit waves-effect waves-light btn">SUIVANT</a>
+</section>
+
+<section class="progress-bar">
+    <div class="cercle "></div>
+    <div class="cercle"></div>
+    <div class="cercle active"></div>
+    <div class="cercle"></div>
 </section>
 </body>
 </html>

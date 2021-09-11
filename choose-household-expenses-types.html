@@ -6,23 +6,64 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Composants</title>
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/common.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
           rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/choose-household-expenses-types.css">
 </head>
 <body>
 
 <!--2. Choisir le type de dépenses ménagères-->
+
+<!--1. Choisir le type des dépenses-->
 <section class="navigation">
     <span><i class="material-icons">chevron_left</i></span>
-    <span class="title">title</span>
+    <span class="title">nouvelle dépense</span>
     <span><i class="material-icons">close</i></span>
 </section>
 
+<!--2- Rouded icon-->
+
+<!--    card permet d'avoir l'effet ombre-->
+<div class="icon-round-container card">
+    <i class="icon material-icons">credit_card</i>
+</div>
+
+<!--3- choices-->
+<p class="description"> Quel est le type de dépense que vous souhaitez enregistrer ?</p>
+<section class="choices">
+    <section class="card">
+    <span class="icon-container">
+                <i class="material-icons">shopping_cart</i>
+    </span>
+        <span class="description">
+        <span class="title-description">Liste de dépenses</span>
+        <span class="subtitle-description">exemple : courses de la semaines 05/09 </span>
+    </span>
+    </section>
+
+    <section class="card">
+    <span class="icon-container">
+                <i class="material-icons">sell</i>
+    </span>
+        <span class="description">
+        <span class="title-description">Dépense unitaire</span>
+        <span class="subtitle-description">exemple : brique de lait 1L</span>
+    </span>
+    </section>
+</section>
+
+<!-- 5- progress bar -->
+<section class="progress-bar">
+    <div class="cercle "></div>
+    <div class="cercle active"></div>
+    <div class="cercle"></div>
+    <div class="cercle"></div>
+</section>
 </body>
 </html>

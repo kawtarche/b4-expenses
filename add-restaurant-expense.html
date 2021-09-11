@@ -6,22 +6,68 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Composants</title>
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/common.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
           rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/add-restaurant-expense.css">
+    <script type="text/javascript" src="java-scripts/add-restaurant-expenses.js"></script>
 </head>
 <body>
 
 <!--8. Saisir l'ensemble des informations de la dépense-->
 <section class="navigation">
     <span><i class="material-icons">chevron_left</i></span>
-    <span class="title">title</span>
+    <span class="title">nouvelle dépense</span>
     <span><i class="material-icons">close</i></span>
 </section>
+
+<!--1- champs de saisie-->
+<section class="enter-fields">
+    <div class="input-field ">
+        <input type="text" id="title" >
+        <label for="title">Titre*</label>
+    </div>
+
+    <div class="input-field ">
+        <input type="text" id="restaurant" class="autocomplete" >
+        <label for="restaurant">Restaurant</label>
+    </div>
+
+    <div class="input-field ">
+        <input id="date" type="date">
+        <label for="date">Date*</label>
+    </div>
+
+    <div class="input-field ">
+        <input id="price" type="number">
+        <label for="price">Prix*</label>
+    </div>
+
+    <section class="container-upload">
+        <span class="description-input"> Facture </span>
+        <button class="waves-effect waves-light btn icon-photo"><i class="material-icons">photo_camera</i></button>
+    </section>
+
+
+    <div class="input-field ">
+        <textarea class="materialize-textarea"></textarea>
+        <label >Remarque</label>
+    </div>
+
+    <a class="submit waves-effect waves-light btn">VALIDER</a>
+</section>
+
+<section class="progress-bar">
+    <div class="cercle "></div>
+    <div class="cercle"></div>
+    <div class="cercle active"></div>
+    <div class="cercle"></div>
+</section>
+
 </body>
 </html>
