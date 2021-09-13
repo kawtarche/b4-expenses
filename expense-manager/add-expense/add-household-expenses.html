@@ -12,14 +12,14 @@
           rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/add-restaurant-expense.css">
-    <script type="text/javascript" src="java-scripts/add-restaurant-expenses.js"></script>
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/add-expense/add-household-expense.css">
+    <script type="text/javascript" src="../java-scripts/add-household-expense.js"></script>
 </head>
 <body>
 
-<!--8. Saisir l'ensemble des informations de la dépense-->
+<!--3. Saisir les informations sur les dépenses-->
 <section class="navigation">
     <span><i class="material-icons">chevron_left</i></span>
     <span class="title">nouvelle dépense</span>
@@ -28,25 +28,24 @@
 
 <!--1- champs de saisie-->
 <section class="enter-fields">
-    <div class="input-field ">
-        <input type="text" id="title" >
-        <label for="title">Titre*</label>
-    </div>
 
     <div class="input-field ">
-        <input type="text" id="restaurant" class="autocomplete" >
-        <label for="restaurant">Restaurant</label>
+        <input id ="titre" class="materialize-textarea" type="text">
+        <label for ="titre" >Titre*</label>
     </div>
 
-    <div class="input-field ">
-        <input id="date" type="date">
-        <label for="date">Date*</label>
-    </div>
 
     <div class="input-field ">
-        <input id="price" type="number">
-        <label for="price">Prix*</label>
+        <input id="produit" class="materialize-textarea" type="text">
+        <label for="produit">Produit*</label>
     </div>
+
+
+    <div class="input-field ">
+        <input id ="number" class="materialize-textarea" type="number">
+        <label for = "number">Quantité*</label>
+    </div>
+
 
     <section class="container-upload">
         <span class="description-input"> Facture </span>
@@ -55,11 +54,17 @@
 
 
     <div class="input-field ">
-        <textarea class="materialize-textarea"></textarea>
-        <label >Remarque</label>
+        <input id="prix" class="materialize-textarea" type="number">
+        <label for = "prix">Prix*</label>
     </div>
 
-    <a class="submit waves-effect waves-light btn">VALIDER</a>
+
+    <div class="input-field ">
+        <textarea class="materialize-textarea"></textarea>
+        <label>Remarque*</label>
+    </div>
+
+    <a class="submit waves-effect waves-light btn">valider</a>
 </section>
 
 <section class="progress-bar">
