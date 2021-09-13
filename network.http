@@ -1,0 +1,22 @@
+###
+
+# curl 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css'
+#  -H 'sec-ch-ua: "Google Chrome";v="93", " Not;A Brand";v="99", "Chromium";v="93"'
+#  -H 'x-ijt: lk53u54v1d8s05l1g81anc2mr8'
+#  -H 'Referer: '
+#  -H 'Origin: http://localhost:63342'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36'
+#  -H 'sec-ch-ua-platform: "Windows"'
+#  --compressed
+GET https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css
+sec-ch-ua: "Google Chrome";v="93", " Not;A Brand";v="99", "Chromium";v="93"
+x-ijt: lk53u54v1d8s05l1g81anc2mr8
+Referer:
+Origin: http://localhost:63342
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36
+sec-ch-ua-platform: "Windows"
+
+###
+
