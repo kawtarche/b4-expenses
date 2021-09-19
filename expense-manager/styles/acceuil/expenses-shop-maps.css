@@ -1,0 +1,56 @@
+section.header-container{
+    background: linear-gradient(to left, #444, rgb(128, 128, 128));
+    padding-bottom: 35px;
+    color:white;
+}
+
+section.navigation{
+    color: white;
+    padding-top: 20px;
+}
+div.expenses-shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.expenses-shop i.shop-icon{
+    font-size: 130px;
+}
+
+section.global-container{
+
+    margin-top: 40px;
+    border-bottom: 0.15px solid gray;
+}
+section.container-food{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+section.maps div.title-maps{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.description{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+div.title-maps{
+    padding-left: 20px;
+}
+
+/*expenses lines*/
+
+
+/*maps*/
+iframe {
+    width: 100%;
+}
+
+

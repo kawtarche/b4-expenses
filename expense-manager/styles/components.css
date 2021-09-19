@@ -54,37 +54,37 @@ section.navigation span.icon i.material-icons {
 
 /*card icon */
 
-section.card span.icon-container {
+section.icon-card span.icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-section.card span.icon-container i.material-icons {
+section.icon-card span.icon-container i.material-icons {
     padding: 25px 35px;
     font-size: 54px;
     color: var(--secondary-button-color);
 }
 
 
-section.card span.description {
+section.icon-card span.description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
 }
 
-section.card span.description span.title-description {
+section.icon-card span.description span.title-description {
     font-size: 18px;
     font-weight: bolder;
     color: var(--main-text-color);
 }
 
-section.card span.description span.subtitle-description {
+section.icon-card span.description span.subtitle-description {
     color: var(--secondary-text-color);
 }
 
-section.card {
+section.icon-card {
     display: flex;
     align-items: center;
 }
@@ -155,11 +155,13 @@ section.container-food {
     flex-direction: row;
     border-bottom: 1px solid #ccc;
     padding: 10px;
+    align-items: center;
 }
 
-section.container-food i.material-icons {
+section.container-food i.material-icons,  section.container-food i.icon{
     padding-right: 18px;
     font-size: 35px;
+    font-style: normal;
 }
 
 

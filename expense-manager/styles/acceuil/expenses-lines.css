@@ -1,0 +1,34 @@
+/*header*/
+
+div.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+}
+
+div.description div.title {
+    font-size: 50px;
+}
+
+section.color {
+    color: white;
+    background: linear-gradient(to left, #444, rgb(128, 128, 128));
+    padding-bottom: 35px;
+}
+
+section.navigation {
+    color: white;
+}
+
+section.container-expenses {
+    padding-top: 10px;
+}
+/*filter*/
+.filter {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+}

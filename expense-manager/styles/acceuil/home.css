@@ -1,0 +1,119 @@
+
+/*add icon*/
+span.material-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+/*Target display*/
+div.outer-circle {
+  margin : auto;
+/*Pour centrer un élement qui a un width fixe, on met with: auto*/
+}
+div.description.text {
+    margin-top: 70px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+div.description span.second-line-description {
+    text-decoration : underline;
+}
+
+/* lines-of-expenses*/
+
+section.expenses-lines{
+    margin-top: 35px;
+}
+
+section.expenses-lines div.title{
+font-weight: bolder;
+color: var(--main-text-color);
+    margin-left: 19px;
+}
+
+section.container-food.top {
+    margin-top: 5px;
+}
+section.container-food{
+    padding: 10px 20px;
+}
+section.container-food span.material-icons.shop {
+    padding-right: 18px;
+    font-size: 35px;
+    font-style: normal;
+}
+section.container-food i.material-icons.store {
+  color : #444444;
+}
+/*List of expenses*/
+section.expenses-lines a.more-informations.lines {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    color: var(--main-text-color);
+    margin-top: 10px;
+    margin-right: 20px;
+
+}
+section.expenses-lines a.more-informations span.title {
+    color: var(--primary-button-color);
+    font-weight: normal;
+}
+
+/*Types-of-expenses*/
+
+div.types-informations p.title{
+    margin-top: 10px;
+    font-weight: bolder;
+    color: var(--main-text-color);
+}
+
+div.cards{
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+section.types-expenses.card span.material-icons.shop {
+    margin-right: 15px;
+    font-size: 80px;
+    color: var(--main-text-color);
+}
+/*graphic-expenses*/
+div.description{
+    margin-top: 10px;
+}
+
+div.description p.title{
+    margin-left: 20px;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+div.description p.subtitle{
+    margin-left: 20px;
+}
+
+div.graphic-expenses{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a.more-informations{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    color: var(--main-text-color);
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+a.more-informations span.title {
+    color: var(--primary-button-color);
+    font-weight: normal;
+}
