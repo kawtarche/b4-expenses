@@ -1,0 +1,39 @@
+div.login-icon {
+    margin-top: 100px;
+    background-color: var(--secondary-button-color);
+}
+
+div.login-icon i.icon {
+    color: white;
+}
+
+
+form.login-form {
+    margin: 40px 20px 20px;
+}
+
+form.login-form p {
+    text-align: end;
+    color: var(--main-text-color);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+div.action {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px 20px;
+}
+
+a#login-button {
+    background-color: var(--secondary-button-color);
+
+}
+
+a#new-account-button {
+    margin-top: 10px;
+    border: 1px solid var(--secondary-button-color);
+    background-color: white;
+    color: var(--primary-button-color);
+    box-shadow: none;
+}
