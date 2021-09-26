@@ -1,0 +1,75 @@
+/* Header */
+section.header-container{
+    background: linear-gradient(to left, #444, rgb(128, 128, 128));
+    padding-bottom: 35px;
+    color:white;
+}
+section.navigation{
+    color: white;
+    padding-top: 20px;
+}
+div.expenses-shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.expenses-shop i.shop-icon{
+    font-size: 130px;
+}
+div.expenses-shop p {
+    margin: 0;
+}
+/* Informations */
+
+div.container-information{
+    display: flex;
+    border-bottom : 1px solid #CCC;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+div.container-information .title{
+    min-width: 150px;
+    max-width: 150px;
+    overflow-wrap: break-word;
+    font-weight: bolder;
+}
+
+section.details-of-operation{
+    margin-bottom: 32px;
+}
+
+/*purchased-itmes*/
+section.items .title {
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.comment {
+    padding-right: 10px;
+    text-align: justify;
+}
+/*delete expense line*/
+span.remove-expense{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+span.remove-expense button.button-rm{
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+img.bill {
+    height: 100px;
+}
+/*purchased-itmes*/
+section.container-food{
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+

@@ -5,19 +5,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Composants</title>
+    <title>add expense line</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
           rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="java-scripts/add-expense-line.js"></script>
+    <script type="text/javascript" src="../java-scripts/add-expense/add-expense-line.js"></script>
 
 </head>
 <body>
-<link rel="stylesheet" href="styles/components.css">
-<link rel="stylesheet" href="styles/common.css">
-<link rel="stylesheet" href="styles/add.expense-line.css">
+<link rel="stylesheet" href="../styles/components.css">
+<link rel="stylesheet" href="../styles/common.css">
+<link rel="stylesheet" href="../styles/add-expense/add.expense-line.css">
 <!-- Compiled and minified CSS -->
 
 <!--6.1 Saisir les informations générales sur chaque ligne des dépenses-->
@@ -41,6 +41,7 @@
         <div class="input-field ">
             <input id="prix" class="materialize-textarea" type="number">
             <label for="prix" >Prix*</label>
+            <p id ="price-error-message" class="hide"> Le prix ne peut pas être négative </p>
         </div>
         <div class="input-field ">
             <textarea class="materialize-textarea"></textarea>
@@ -48,7 +49,7 @@
         </div>
         </div>
     </div>
-    <a class="submit waves-effect waves-light btn">SUIVANT</a>
+    <a class="submit waves-effect waves-light btn" id="submit">SUIVANT</a>
 </section>
 
 <section class="progress-bar">

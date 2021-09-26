@@ -1,0 +1,26 @@
+
+/* Dollar-icon */
+
+div.icon-round-container.card.budget {
+background-color: var(--secondary-button-color);
+margin-top: 30px;
+}
+div.icon-round-container.card.budget i.icon.material-icons.icon-budget {
+    color: white;
+}
+
+/*inputs blocs*/
+section.budget-information{
+    margin-left : 30px;
+    margin-right:30px ;
+    margin-top: 40px;
+}
+
+/*validate button*/
+a.btn.validate-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    margin-left: 30px;
+    margin-right: 30px;
+}

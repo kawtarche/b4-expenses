@@ -1,17 +1,30 @@
 /* test */
 section.test-container {
     margin: 12px;
+    margin-top: 50px;
+}
+
+section.test-container.full-with {
+    margin: 0;
+    margin-top: 50px;
+}
+
+section.test-container.full-with h5 {
+    margin-left: 12px;
+    text-transform: capitalize;
 }
 
 section.test-container h5 {
     color: darkgoldenrod;
     margin-top: 20px;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 hr {
     margin-bottom: 20px;
 }
+
 /* navigation */
 
 section.navigation {
@@ -41,37 +54,37 @@ section.navigation span.icon i.material-icons {
 
 /*card icon */
 
-section.card span.icon-container {
+section.icon-card span.icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-section.card span.icon-container i.material-icons {
+section.icon-card span.icon-container i.material-icons {
     padding: 25px 35px;
     font-size: 54px;
     color: var(--secondary-button-color);
 }
 
 
-section.card span.description {
+section.icon-card span.description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
 }
 
-section.card span.description span.title-description {
+section.icon-card span.description span.title-description {
     font-size: 18px;
     font-weight: bolder;
     color: var(--main-text-color);
 }
 
-section.card span.description span.subtitle-description {
+section.icon-card span.description span.subtitle-description {
     color: var(--secondary-text-color);
 }
 
-section.card {
+section.icon-card {
     display: flex;
     align-items: center;
 }
@@ -137,25 +150,166 @@ section.container-upload button.waves-effect {
 
 /*items expenses*/
 
-section.container-food{
+section.container-food {
     display: flex;
     flex-direction: row;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    align-items: center;
 }
-section.container-food i.material-icons{
+
+section.container-food i.material-icons,  section.container-food i.icon{
     padding-right: 18px;
+    font-size: 35px;
+    font-style: normal;
 }
 
 
-section.container-food div.items-food{
-    border-bottom: 1px solid var(--primary-button-color);
+section.container-food div.items-food {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-section.container-food div.items-food span.type-food{
-font-weight: bolder;
+section.container-food div.items-food span.type-food {
+    font-weight: bolder;
 }
 
 section.container-food span {
-    color: #444;}
+    color: #444;
+}
+
+
+/* Target-display */
+
+.outer-circle {
+    width: 140px;
+    height: 140px;
+    background-image: linear-gradient(
+            to right, rgb(9, 112, 26) 0%,
+            #4caf50 100%);
+}
+
+.inner-circle {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+}
+
+/* un tag html avec cette classe aura comme effet: */
+.circle-center {
+    /* cercle */
+    border-radius: 50%;
+    /* pour center: */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle .target {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-circle .target span.expenses {
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/*stick-diagram*/
+section.diagram {
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    width: fit-content;
+    align-items: flex-end;
+}
+
+section.diagram .left {
+    width: 20px;
+    height: 80%;
+    background-color: var(--primary-button-color);
+}
+
+section.diagram .right {
+    width: 20px;
+    height: 40%;
+    background-color: var(--secondary-button-color);
+}
+
+section.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.description span.month {
+    font-weight: bolder;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+
+section.description span.score {
+
+    color: var(--secondary-button-color);
+}
+
+section.diagram-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+/* more info */
+a.more-informations {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color: var(--secondary-text-color);
+}
+
+a.more-informations span.title {
+    margin-right: 10px;
+}
+
+
+/*cards*/
+
+.types-expenses {
+    display: flex;
+    align-items: center;
+    border-radius: 4%;
+    padding: 12px;
+}
+
+.types-expenses .icon {
+    margin-right: 15px;
+    font-size: 80px;
+    color: var(--main-text-color);
+}
+
+.description-of-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-text-color);
+}
+
+.title-container .title {
+    font-weight: bolder;
+    color: var(--main-text-color);
+}
+
+.types-expenses .percentage-of-expenses {
+    font-size: 49px;
+    color: var(--secondary-text-color);
+}
+

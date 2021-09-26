@@ -6,9 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Composants</title>
+    <!--   CSS for code display -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+          integrity="sha512-3xLMEigMNYLDJLAgaGlDSxpGykyb+nQnJBzbkQy2a0gyVKL2ZpNOPIj1rD8IPFaJbwAgId/atho1+LBpWu5DhA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    <link href="styles/add-expense/icons.css"
           rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -36,14 +40,14 @@
 <!-- card-icon -->
 <section class="test-container">
     <h5>Card icon</h5>
-    <section class="card">
-    <span class="icon-container">
-    <i class="material-icons">payment</i>
-    </span>
+    <section class="icon-card card">
+        <span class="icon-container">
+        <i class="material-icons">payment</i>
+         </span>
         <span class="description">
-        <span class="title-description">Title</span>
-        <span class="subtitle-description">Subtitle</span>
-    </span>
+            <span class="title-description">Title</span>
+            <span class="subtitle-description">Subtitle</span>
+         </span>
     </section>
 </section>
 
@@ -61,18 +65,72 @@
 
 
 <!--  items expenses  -->
-<section class="test-container">
-    <h5>Card icon</h5>
+<section class="test-container full-with">
+    <h5>items expenses</h5>
     <section class="container-food">
         <i class="material-icons">payment</i>
         <div class="items-food">
             <span class="type-food">Pêche jaune</span>
             <span class="food-mesuration">2.5 kg</span>
         </div>
-        <span class="price-food">6.9e </span>
+        <span class="price-food">6.9€ </span>
 
     </section>
 </section>
+
+<section class="test-container">
+    <h5>Target-display</h5>
+    <!-- Target-display-->
+    <div class="outer-circle circle-center card">
+        <div class="inner-circle circle-center">
+            <div class="target">
+                <span class="expenses"> 65 € </span>
+                <span class="total">350 €</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--stick-diagram-->
+<section class="test-container">
+    <h5>stick-diagram</h5>
+    <section class="diagram-container">
+        <section class="diagram">
+            <div class="left"></div>
+            <div class="right"></div>
+        </section>
+        <section class="description">
+            <span class="month">Janvier</span>
+            <span class="score">345/250</span>
+        </section>
+    </section>
+</section>
+
+<!--more informations-->
+<section class="test-container">
+    <h5>more informations</h5>
+    <a class="more-informations">
+        <span class="title">Plus d'informations</span>
+        <span class="material-icons">arrow_forward</span>
+    </a>
+</section>
+
+<!--cards-->
+<section class="test-container">
+    <h5>Cards</h5>
+    <section class="types-expenses card">
+        <span class="icon material-icons">storefront</span>
+        <div class="description-of-container">
+            <div class="title-container">
+                <span class="title"> Au réstaurants </span>
+                <span class="first-subtitle">  46 dépenses en 2021  </span>
+                <span class="second-subtitle">  1230 euros </span>
+            </div>
+            <span class="percentage-of-expenses">65%</span>
+        </div>
+    </section>
+</section>
+
 
 <!-- progress bar -->
 <section class="test-container">
@@ -85,6 +143,14 @@
     </section>
 </section>
 
-</section>
+
+<!-- Code used to display html code example (library highlight.js) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+    document.querySelectorAll("code").forEach(function (element) {
+        element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    });
+</script>
 </body>
 </html>

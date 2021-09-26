@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+          rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/authentication/login.css">
+    <script type="application/javascript" src="../java-scripts/authentication/login.js"></script>
+</head>
+<body>
+<!-- login icon -->
+<div class="icon-round-container card login-icon">
+    <i class="icon material-icons">lock</i>
+</div>
+
+<!-- formulaire de login-->
+<!--Identifiant-->
+
+<form class="login-form">
+    <div class="input-field login-form-field">
+        <input id="login-input" type="text" class="validate" >
+        <label for="login-input">Identifiant</label>
+    </div>
+    <div class="input-field login-form-field">
+        <input id="password-input" type="password" class="validate" >
+        <label for="password-input">Mot de passe</label>
+    </div>
+
+    <p class="forgot-login">Mot de passe oublié ?</p>
+</form>
+
+
+<div class="action">
+    <a class="waves-effect waves-light btn " id="login-button">S'authentifier</a>
+    <a class="waves-effect btn" id="new-account-button">Créer un nouveau compte</a>
+</div>
+
+</body>
+</html>

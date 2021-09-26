@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>details-expenses</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+          rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/acceuil/details-expenses.css">
+</head>
+<body>
+
+<!--header-->
+<section class="header-container">
+    <section class="navigation">
+        <span><i class="material-icons">chevron_left</i></span>
+        <span class="title">DETAILS DEPENSE</span>
+        <span></span>
+
+    </section>
+    <!-- description-expenses-shop--->
+    <div class="expenses-shop">
+        <i class="material-icons shop-icon">storefront</i>
+        <p>Course fourniture scolaire</p>
+        <p>12/07/2021</p>
+    </div>
+</section>
+<!--Informations -->
+
+<section class="details-of-operation">
+    <div class="container-information">
+        <span class="title">Auteur</span>
+        <span>BOUDFOR Sâad</span>
+    </div>
+    <div class=" container-information">
+        <span class="title">Magasin</span>
+        <span>Leclerc Ivry-sur-Seine</span>
+    </div>
+    <div class=" container-information">
+        <span class="title">Prix</span>
+        <span>14.6€</span>
+    </div>
+    <div class="container-information ">
+        <span class="title">Facture</span>
+        <span><img class="bill" src="../assets/carrfour-facture.jpg"></span>
+        <span class="material-icons">save_alt</span>
+    </div>
+    <div class="container-information">
+        <span class="title">Remarques :</span>
+        <span class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, perspiciatis!</span>
+    </div>
+</section>
+
+<!--purchased-itmes-->
+<section class="items">
+    <div class="title">Articles achetés :</div>
+    <div class="expenses-lines">
+        <section class="container-food">
+            <i class="material-icons">shop</i>
+            <div class="items-food">
+                <span class="type-food">Pêche jaune</span>
+                <span class="food-mesuration">2.5 kg</span>
+            </div>
+            <span class="price-food">6.9€ </span>
+        </section>
+    </div>
+    <div class="expenses-lines">
+        <section class="container-food">
+            <i class="material-icons">shop</i>
+            <div class="items-food">
+                <span class="type-food">Pastèque sans pépins</span>
+                <span class="food-mesuration">4 kg</span>
+            </div>
+            <span class="price-food">4.99€ </span>
+        </section>
+    </div>
+    <div class="expenses-lines">
+        <section class="container-food">
+            <i class="material-icons">shop</i>
+            <div class="items-food">
+                <span class="type-food">Viande haché</span>
+                <span class="food-mesuration">1 kg</span>
+            </div>
+            <span class="price-food">9.99€ </span>
+        </section>
+    </div>
+    <div class="expenses-lines">
+        <section class="container-food">
+            <i class="material-icons">shop</i>
+            <div class="items-food">
+                <span class="type-food">Lait</span>
+                <span class="food-mesuration">1L</span>
+            </div>
+            <span class="price-food">0.63€ </span>
+        </section>
+    </div>
+</section>
+<!-- delete expense line-->
+<span class="remove-expense">
+    <button class=" btn-flat button-rm">Supprimer cette dépense</button>
+</span>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Définir mon budget</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+          rel="stylesheet">
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/budget/budget-define.css">
+    <script type="text/javascript" src="../java-scripts/budget/define-budget.js"></script>
+</head>
+<body>
+
+
+<!--header-->
+<section class="navigation">
+    <span><i class="material-icons">chevron_left</i></span>
+    <span class="title">DEFINR MON BUDGET</span>
+    <span><i class="material-icons">close</i></span>
+</section>
+
+
+<!-- Dollar-icon-->
+<div class="icon-round-container card budget">
+    <i class="icon material-icons icon-budget">local_atm</i>
+</div>
+
+
+<!--inputs blocs-->
+<section class="budget-information">
+    <div class="input-field ">
+        <input id="budget" type="number">
+        <label for="budget">Mon nouveau budget en euros*</label>
+        <p id="budget-error-message" class="hide">Le budget ne peut être négatif </p>
+    </div>
+
+    <div class="input-field ">
+        <input id="date" disabled type="text" value="Septembre 2021">
+        <label for="date"></label>
+    </div>
+</section>
+
+<!--validate button-->
+<a class="btn validate-button">valider</a>
+
+</body>
+</html>

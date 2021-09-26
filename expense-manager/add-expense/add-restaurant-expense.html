@@ -12,13 +12,14 @@
           rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/add-expense.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/add-expense/add-restaurant-expense.css">
+    <script type="text/javascript" src="../java-scripts/add-expense/add-restaurant-expenses.js"></script>
 </head>
 <body>
 
-<!--5. Saisir les informations générales sur les dépenses-->
+<!--8. Saisir l'ensemble des informations de la dépense-->
 <section class="navigation">
     <span><i class="material-icons">chevron_left</i></span>
     <span class="title">nouvelle dépense</span>
@@ -27,28 +28,26 @@
 
 <!--1- champs de saisie-->
 <section class="enter-fields">
-<!--    obligatoires: imput-fields>input#id(type)+label#id(for)-->
     <div class="input-field ">
-        <input id="title" class="materialize-textarea" type="text">
+        <input type="text" id="title" >
         <label for="title">Titre*</label>
     </div>
 
     <div class="input-field ">
-        <input id="quantite" class="materialize-textarea" type="number">
-        <label for="quantite">Quantité*</label>
+        <input type="text" id="restaurant" class="autocomplete" >
+        <label for="restaurant">Restaurant</label>
     </div>
 
     <div class="input-field ">
-        <input id="prix" class="materialize-textarea" type="number">
-        <label for="prix">Prix*</label>
-    </div>
-
-
-    <div class="input-field ">
-        <input id="date"class="materialize-textarea" type="date">
+        <input id="date" type="date">
         <label for="date">Date*</label>
     </div>
 
+    <div class="input-field ">
+        <input id="price" type="number">
+        <label for="price">Prix*</label>
+        <p  id="price-error-message" class="hide"> Le prix doit être positif</p>
+    </div>
 
     <section class="container-upload">
         <span class="description-input"> Facture </span>
@@ -57,11 +56,11 @@
 
 
     <div class="input-field ">
-        <textarea class="materialize-textarea"></textarea>
+        <textarea class="materialize-textarea" id="comment"></textarea>
         <label >Remarque</label>
     </div>
 
-    <a class="submit waves-effect waves-light btn">SUIVANT</a>
+    <a class="submit waves-effect waves-light btn" id="submit" >VALIDER</a>
 </section>
 
 <section class="progress-bar">
