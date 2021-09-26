@@ -9,3 +9,18 @@
 .btn, .btn-large, .btn-small {
     background-color: var(--primary-button-color);
 }
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 0;
+    font-style: italic;
+}

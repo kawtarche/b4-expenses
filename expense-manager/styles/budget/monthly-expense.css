@@ -1,0 +1,24 @@
+div.title {
+
+}
+
+section.montly-diagram-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div.title-expenses{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-weight: bolder;
+}
+
+section.container-food i.material-icons.expense{
+    margin-left: 20px;
+}

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/add-expense/add-restaurant-expense.css">
-    <script type="text/javascript" src="../java-scripts/add-restaurant-expenses.js"></script>
+    <script type="text/javascript" src="../java-scripts/add-expense/add-restaurant-expenses.js"></script>
 </head>
 <body>
 
@@ -46,6 +46,7 @@
     <div class="input-field ">
         <input id="price" type="number">
         <label for="price">Prix*</label>
+        <p  id="price-error-message" class="hide"> Le prix doit être positif</p>
     </div>
 
     <section class="container-upload">
@@ -55,11 +56,11 @@
 
 
     <div class="input-field ">
-        <textarea class="materialize-textarea"></textarea>
+        <textarea class="materialize-textarea" id="comment"></textarea>
         <label >Remarque</label>
     </div>
 
-    <a class="submit waves-effect waves-light btn">VALIDER</a>
+    <a class="submit waves-effect waves-light btn" id="submit" >VALIDER</a>
 </section>
 
 <section class="progress-bar">

@@ -1,0 +1,29 @@
+div.icon-round-container.card.budget {
+    margin-top: 100px;
+}
+
+div.description-first-connexion{
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: var(--main-text-color);
+}
+div.description-first-connexion span {
+    font-weight: bold;
+}
+
+div.boutons{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+div.boutons #add-expense {
+    margin-top: 5px;
+    color: var(--main-text-color);
+    background-color: white;
+    border: 1px solid var(--main-text-color);
+
+}

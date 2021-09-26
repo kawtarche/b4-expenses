@@ -1,0 +1,93 @@
+section.container-navigation {
+    background: url("../../assets/soupe-courgette-et-potiron.jpeg") no-repeat center;
+    background-size: cover;
+    height: 300px;
+    color: white;
+}
+
+section.container-meal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    position : absolute;
+    left: 5%;
+    top: -63px;
+}
+main{
+    position: relative;
+    padding-top: 80px;
+}
+div.description-meal {
+display: flex;
+flex-direction: row;
+padding-top: 12px;
+padding-bottom: 12px;
+width: 100%;
+justify-content: space-around;
+}
+div.description-meal span.time{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+div.description-meal span.degree{
+display: flex;
+flex-direction: row;
+    align-items: center;
+}
+span.ingredients{
+    display: flex;
+    align-items: center;
+}
+div.notes {
+    padding-top: 12px;
+}
+
+div.informations-receipe {
+    padding-top: 12px;
+}
+span.material-icons .right {
+    margin-right: 5px;
+}
+
+div.title-list{
+    font-weight: bolder;
+    margin-left: 24px;
+}
+section.container-food {
+    border-bottom: none;
+}
+div.preparation-title{
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+section.container-food i.material-icons{
+    margin-left: 12px;
+}
+
+section.steps-recipe {
+    margin-left: 25px;
+}
+section.title {
+    margin-top: 10px;
+    font-weight: bolder;
+}
+a.waves-effect.waves-light.btn.planner {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+}
+img.receipe-video {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+}

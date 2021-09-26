@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Composants</title>
+    <title>Add expenses</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/add-expense/add-expense.css">
+    <script type="application/javascript" src="../java-scripts/add-expense/add-expense.js"> </script>
 </head>
 <body>
 
@@ -34,34 +35,35 @@
     </div>
 
     <div class="input-field ">
-        <input id="quantite" class="materialize-textarea" type="number">
+        <input id="quantite" type="number">
         <label for="quantite">Quantité*</label>
+        <p id="quantity-error-message" class="hide">La quatité ne peut être negatif</p>
     </div>
 
     <div class="input-field ">
-        <input id="prix" class="materialize-textarea" type="number">
+        <input id="prix" type="number">
         <label for="prix">Prix*</label>
     </div>
 
 
     <div class="input-field">
-        <input id="date" class="materialize-textarea" type="date">
+        <input id="date"  type="date">
         <label for="date">Date*</label>
     </div>
 
 
     <section class="container-upload">
         <span class="description-input"> Facture </span>
-        <button class="waves-effect waves-light btn icon-photo"><i class="material-icons">photo_camera</i></button>
+        <button class="waves-effect waves-light btn icon-photo" ><i class="material-icons">photo_camera</i></button>
     </section>
 
 
     <div class="input-field ">
-        <textarea class="materialize-textarea"></textarea>
+        <textarea class="materialize-textarea" id="remark"></textarea>
         <label >Remarque</label>
     </div>
 
-    <a class="submit waves-effect waves-light btn">SUIVANT</a>
+    <a class="submit waves-effect waves-light btn" id="new-expense">SUIVANT</a>
 </section>
 
 <section class="progress-bar">

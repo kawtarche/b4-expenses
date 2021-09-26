@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Composants</title>
+    <title>Nouvelle dépense</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/add-expense/add-household-expense.css">
-    <script type="text/javascript" src="../java-scripts/add-household-expense.js"></script>
+    <script type="text/javascript" src="../java-scripts/add-expense/add-household-expense.js"></script>
 </head>
 <body>
 
@@ -30,41 +30,38 @@
 <section class="enter-fields">
 
     <div class="input-field ">
-        <input id ="titre" class="materialize-textarea" type="text">
-        <label for ="titre" >Titre*</label>
+        <input id="titre" type="text">
+        <label for="titre">Titre*</label>
     </div>
 
-
     <div class="input-field ">
-        <input id="produit" class="materialize-textarea" type="text">
+        <input id="produit" type="text">
         <label for="produit">Produit*</label>
     </div>
 
-
     <div class="input-field ">
-        <input id ="number" class="materialize-textarea" type="number">
-        <label for = "number">Quantité*</label>
+        <input id="quantity" type="number">
+        <label for="quantity">Quantité*</label>
+        <p id ="quantity-error-message" class ="hide">La quantité ne peut pas être négative </p>
     </div>
-
 
     <section class="container-upload">
         <span class="description-input"> Facture </span>
         <button class="waves-effect waves-light btn icon-photo"><i class="material-icons">photo_camera</i></button>
     </section>
 
-
     <div class="input-field ">
-        <input id="prix" class="materialize-textarea" type="number">
-        <label for = "prix">Prix*</label>
+        <input id="prix" type="number">
+        <label for="prix">Prix*</label>
+        <p id="price-error-message" class="hide">La quatité ne peut être negatif</p>
     </div>
 
-
     <div class="input-field ">
-        <textarea class="materialize-textarea"></textarea>
+        <textarea class="materialize-textarea" id="comment"></textarea>
         <label>Remarque*</label>
     </div>
 
-    <a class="submit waves-effect waves-light btn">valider</a>
+    <a class="submit waves-effect waves-light btn" id="submit">valider</a>
 </section>
 
 <section class="progress-bar">
