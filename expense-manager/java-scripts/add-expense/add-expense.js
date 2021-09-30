@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const priceInput = document.getElementById('prix');
     const remarqueInput = document.getElementById('remark');
     const newExpenseInput = document.getElementById('new-expense');
+
     newExpenseInput.addEventListener('click', () => {
         const expenseForm = new ExpenseForm();
         expenseForm.title = titleInput.value;
@@ -63,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         expenseForm.date = dateInput.value;
         expenseForm.remark = remarqueInput.value;
         expenseForm.submit();
+        window.location="https://apps.boudfor.fr/b4-expenses/expense-manager/add-expense/sucess.html"
     })
 
 });

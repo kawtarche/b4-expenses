@@ -23,7 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
         a.username = identicateurInput.value;
         a.password = passwardInput.value;
         a.connect();
+        window.location = 'https://apps.boudfor.fr/b4-expenses/expense-manager/acceuil/home.html';
     })
+
 
 });
 
@@ -36,7 +38,8 @@ class Login {
     password;
 
     connect() {
-        console.log(this.username, this.password);
+        console.log(this);
     }
 
 }
+

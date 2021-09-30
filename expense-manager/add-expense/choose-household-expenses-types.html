@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/add-expense/choose-household-expenses-types.css">
+    <script type="text/javascript" src="../java-scripts/add-expense/choose-household-expenses-types.js"></script>
 </head>
 <body>
 
@@ -37,7 +38,7 @@
 <!--3- choices-->
 <p class="description"> Quel est le type de dépense que vous souhaitez enregistrer ?</p>
 <section class="choices">
-    <section class="icon-card card">
+    <section class="icon-card card" id ="expenses-list">
     <span class="icon-container">
                 <i class="material-icons">shopping_cart</i>
     </span>
@@ -47,7 +48,7 @@
     </span>
     </section>
 
-    <section class="icon-card card">
+    <section class="icon-card card" id="unit-expense">
     <span class="icon-container">
                 <i class="material-icons">sell</i>
     </span>
