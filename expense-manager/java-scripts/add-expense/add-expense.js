@@ -1,3 +1,5 @@
+import { navigate } from "../util.js"
+
 // afficher le message Hello, ma page web est chargé
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -64,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         expenseForm.date = dateInput.value;
         expenseForm.remark = remarqueInput.value;
         expenseForm.submit();
-        window.location="https://apps.boudfor.fr/b4-expenses/expense-manager/add-expense/sucess.html"
+        navigate("/expense-manager/add-expense/sucess.html");
     })
 
 });

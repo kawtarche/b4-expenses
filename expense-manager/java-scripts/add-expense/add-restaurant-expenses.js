@@ -1,3 +1,5 @@
+import { navigate } from "../util.js"
+
 const options = {
     data: {
         'McDonald': null,
@@ -37,7 +39,7 @@ submitA.addEventListener('click',() => {
     expense.price = priceInput.value;
     expense.comment = commentTextarea.value;
     expense.submit();
-    window.location ="https://apps.boudfor.fr/b4-expenses/expense-manager/add-expense/sucess.html"; // Quand je clique sur le bouton dépense restaurant (écran 1) il y'a l'écran add-restaurant-expenses qui s'affiche mais l'écran succès ne s'affiche pas après
+    navigate("/expense-manager/add-expense/sucess.html"); // Quand je clique sur le bouton dépense restaurant (écran 1) il y'a l'écran add-restaurant-expenses qui s'affiche mais l'écran succès ne s'affiche pas après
     // Mais quand je vais directement à l'écran 8 là je peux aller directement à l'écran 9
 })
 
