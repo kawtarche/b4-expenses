@@ -17,16 +17,16 @@
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/budget/budget-define.css">
-    <script type="text/javascript" src="../java-scripts/budget/define-budget.js"></script>
+    <script type="module" src="../java-scripts/budget/define-budget.js"></script>
 </head>
 <body>
 
 
 <!--header-->
 <section class="navigation">
-    <span><i class="material-icons">chevron_left</i></span>
+    <span id="chevron-icon"><i class="material-icons">chevron_left</i></span>
     <span class="title">DEFINR MON BUDGET</span>
-    <span><i class="material-icons">close</i></span>
+    <span id="close-icon"><i class="material-icons">close</i></span>
 </section>
 
 
@@ -51,7 +51,7 @@
 </section>
 
 <!--validate button-->
-<a class="btn validate-button">valider</a>
+<a class="btn validate-button" id="validate-icon">valider</a>
 
 </body>
 </html>

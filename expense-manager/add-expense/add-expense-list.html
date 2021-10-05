@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nouvelle dépense</title>
+    <title>Add expense</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
@@ -14,54 +14,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/common.css">
-    <link rel="stylesheet" href="../styles/add-expense/add-household-expense.css">
-    <script type="module" src="../java-scripts/add-expense/add-household-expense.js"></script>
+    <link rel="stylesheet" href="../styles/add-expense/add-expense.css">
+    <script type="module" src="../java-scripts/add-expense/add-expense-list.js"></script>
 </head>
 <body>
 
-<!--3. Saisir les informations sur les dépenses-->
+<!--5. Saisir les informations générales sur les dépenses-->
 <section class="navigation">
-    <span><i class="material-icons">chevron_left</i></span>
+    <span><i class="material-icons" id="icon-chevron-left">chevron_left</i></span>
     <span class="title">nouvelle dépense</span>
-    <span><i class="material-icons">close</i></span>
+    <span><i class="material-icons" id="icon-close">close</i></span>
 </section>
 
 <!--1- champs de saisie-->
 <section class="enter-fields">
-
+    <!--    obligatoires: imput-fields>input#id(type)+label#id(for)-->
     <div class="input-field ">
-        <input id="titre" type="text">
-        <label for="titre">Titre*</label>
+        <input id="title" class="materialize-textarea" type="text">
+        <label for="title">Titre*</label>
     </div>
 
     <div class="input-field ">
-        <input id="produit" type="text">
-        <label for="produit">Produit*</label>
+        <input id="prix" type="number">
+        <label for="prix">Prix*</label>
     </div>
 
-    <div class="input-field ">
-        <input id="quantity" type="number">
-        <label for="quantity">Quantité*</label>
-        <p id ="quantity-error-message" class ="hide">La quantité ne peut pas être négative </p>
+
+    <div class="input-field">
+        <input id="date" type="date">
+        <label for="date">Date*</label>
     </div>
+
 
     <section class="container-upload">
         <span class="description-input"> Facture </span>
         <button class="waves-effect waves-light btn icon-photo"><i class="material-icons">photo_camera</i></button>
     </section>
 
-    <div class="input-field ">
-        <input id="prix" type="number">
-        <label for="prix">Prix*</label>
-        <p id="price-error-message" class="hide">La quatité ne peut être negatif</p>
-    </div>
 
     <div class="input-field ">
-        <textarea class="materialize-textarea" id="comment"></textarea>
-        <label>Remarque*</label>
+        <textarea class="materialize-textarea" id="remark"></textarea>
+        <label>Remarque</label>
     </div>
 
-    <a class="submit waves-effect waves-light btn" id="submit">valider</a>
+    <a class="submit waves-effect waves-light btn" id="new-expense">SUIVANT</a>
 </section>
 
 <section class="progress-bar">
