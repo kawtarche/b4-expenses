@@ -1,3 +1,5 @@
+import {navigate} from "../util.js";
+
 const options = {
     data: {
         'McDonald': null,
@@ -28,6 +30,9 @@ const titleInput = document.getElementById('title');
 const dateInput = document.getElementById("date");
 const commentTextarea = document.getElementById('comment');
 const submitA = document.getElementById('submit');
+const closeIconi = document.getElementById('close-icon');
+const chevronLeftIcon = document.getElementById('chevron-left-icon');
+
 
 submitA.addEventListener('click',() => {
     const expense = new Expense();
@@ -36,8 +41,19 @@ submitA.addEventListener('click',() => {
     expense.date = dateInput.value;
     expense.price = priceInput.value;
     expense.comment = commentTextarea.value;
-    expense.submit();
-    })
+})
+
+submitA.addEventListener('click', () => {
+    navigate("/expense-manager/add-expense/sucess.html")
+})
+chevronLeftIcon.addEventListener('click', ()=> {
+    navigate("/expense-manager/add-expense/choose-expenses-type.html");
+})
+
+closeIconi.addEventListener('click', () => {
+    navigate("/expense-manager/acceuil/home.html");
+})
+
 })
 
 function checkPrice() {

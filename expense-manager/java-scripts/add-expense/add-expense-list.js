@@ -2,21 +2,6 @@ import {navigate} from "../util.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
-// retourner ce que l'utilisateur a saisi
-    const quantity = document.getElementById('quantite');
-    const quantityErrorMessage = document.getElementById('quantity-error-message');
-
-    quantity.addEventListener('change', () => {
-        console.log(quantity.value); // la valeur de l'objet HTMLElement stocké dans quanity
-        if (quantity.value < 0) {
-            console.log(quantity.value);
-            quantity.className = 'invalid';
-            quantityErrorMessage.className = 'error show';
-        } else {
-            quantity.className = 'valid';
-            quantityErrorMessage.className = 'hide';
-        }
-    });
 
     // stocké dans la variable price, l'objet qui représente l'element html avec l'ID price
 
@@ -53,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const titleInput = document.getElementById('title');
-    const quantityInput = document.getElementById('quantite');
     const priceInput = document.getElementById('prix');
     const remarqueInput = document.getElementById('remark');
     const newExpenseInput = document.getElementById('new-expense');
@@ -61,26 +45,25 @@ document.addEventListener("DOMContentLoaded", () => {
     newExpenseInput.addEventListener('click', () => {
         const expenseForm = new ExpenseForm();
         expenseForm.title = titleInput.value;
-        expenseForm.quantity = quantityInput.value;
         expenseForm.price = priceInput.value;
         expenseForm.date = dateInput.value;
         expenseForm.remark = remarqueInput.value;
         expenseForm.submit();
         navigation("/b4-expenses/expense-manager/add-expense/sucess.html");
     })
-const iconClosei = document.getElementById('icon-close');
-const iconChevronLefti = document.getElementById('icon-chevron-left');
-const newExpensea = document.getElementById('new-expense');
+    const iconClosei = document.getElementById('icon-close');
+    const iconChevronLefti = document.getElementById('icon-chevron-left');
+    const newExpensea = document.getElementById('new-expense');
 
-     iconClosei.addEventListener('click', () => {
-      navigate("/expense-manager/acceuil/home.html");
-     })
+    iconClosei.addEventListener('click', () => {
+        navigate("/expense-manager/acceuil/home.html");
+    })
     iconChevronLefti.addEventListener('click', () => {
         navigate("/expense-manager/add-expense/choose-household-expenses-types.html");
 
     })
     newExpensea.addEventListener('click', () => {
-        navigate("/expense-manager/add-expense/sucess.html");
+        navigate("/expense-manager/add-expense/add-expense-line.html");
     })
 
 });
@@ -89,7 +72,6 @@ const newExpensea = document.getElementById('new-expense');
 
 class ExpenseForm {
     title;
-    quantity;
     price;
     date;
     remark;

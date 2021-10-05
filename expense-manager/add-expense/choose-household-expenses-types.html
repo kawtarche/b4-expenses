@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/add-expense/choose-household-expenses-types.css">
+    <script type="module" src="../java-scripts/add-expense/choose-household-expenses-types.js"></script>
 </head>
 <body>
 
@@ -22,9 +23,9 @@
 
 <!--1. Choisir le type des dépenses-->
 <section class="navigation">
-    <span><i class="material-icons">chevron_left</i></span>
+    <span><i class="material-icons" id="icon-chevron-left">chevron_left</i></span>
     <span class="title">nouvelle dépense</span>
-    <span><i class="material-icons">close</i></span>
+    <span><i class="material-icons" id="close-icon">close</i></span>
 </section>
 
 <!--2- Rouded icon-->
@@ -37,7 +38,7 @@
 <!--3- choices-->
 <p class="description"> Quel est le type de dépense que vous souhaitez enregistrer ?</p>
 <section class="choices">
-    <section class="icon-card card">
+    <section class="icon-card card" id ="expenses-list">
     <span class="icon-container">
                 <i class="material-icons">shopping_cart</i>
     </span>
@@ -47,7 +48,7 @@
     </span>
     </section>
 
-    <section class="icon-card card">
+    <section class="icon-card card" id="unit-expense">
     <span class="icon-container">
                 <i class="material-icons">sell</i>
     </span>

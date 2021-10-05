@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -15,12 +16,14 @@
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/acceuil/home.css">
+    <script type="module" src="../java-scripts/acceuil/home.js"></script>
+
 </head>
 <body>
 <!--add icon-->
-<span class="material-icons shop">add</span>
+<span class="material-icons add" id="add-icon">add</span>
 <!--Target display-->
-<div class="outer-circle circle-center card">
+<div class="outer-circle circle-center card" id="budget-target">
     <div class="inner-circle circle-center">
         <div class="target">
             <span class="expenses"> 65 € </span>
@@ -82,7 +85,7 @@
 </section>
     <!-List of expenses-->
 
-    <a class="more-informations lines">
+    <a class="more-informations lines" id="expenses-lines">
         <span class="title">Liste des dépenses</span>
         <span class="material-icons shop">arrow_forward</span>
     </a>
@@ -94,7 +97,7 @@
         <p class="description">Cliquez sur les cartes pour avoir plus de détails sur vos statistique de dépenses :</p>
     </div>
     <div class="cards">
-        <section class="types-expenses card">
+        <section class="types-expenses card" id="expenses-resto">
             <span class="icon material-icons shop">storefront</span>
             <div class="description-of-container">
                 <div class="title-container">
@@ -105,7 +108,7 @@
                 <span class="percentage-of-expenses">65%</span>
             </div>
         </section>
-        <section class="types-expenses card">
+        <section class="types-expenses card" id ="expenses-shop">
             <span class="material-icons shop">shopping_cart</span>
             <div class="description-of-container">
                 <div class="title-container">
@@ -131,8 +134,8 @@
                 <div class="right"></div>
             </section>
             <section class="description">
-                <span class="month">Janvier</span>
-                <span class="score">345/250</span>
+                <span class="expense month">Janvier</span>
+                <span class="expense score">345/250</span>
             </section>
         </section>
         <section class="diagram-container">
@@ -141,8 +144,8 @@
                 <div class="right"></div>
             </section>
             <section class="description">
-                <span class="month">Février</span>
-                <span class="score">250/150</span>
+                <span class="expense month">Février</span>
+                <span class="expense score">250/150</span>
             </section>
         </section>
         <section class="diagram-container">
@@ -151,8 +154,8 @@
                 <div class="right"></div>
             </section>
             <section class="description">
-                <span class="month">Mars</span>
-                <span class="score">340/250</span>
+                <span class="expense month">Mars</span>
+                <span class="expense score">340/250</span>
             </section>
         </section>
         <section class="diagram-container">
@@ -161,8 +164,8 @@
                 <div class="right"></div>
             </section>
             <section class="description">
-                <span class="month">Avril</span>
-                <span class="score">320/150</span>
+                <span class="expense month">Avril</span>
+                <span class="expense score">320/150</span>
             </section>
         </section>
         <section class="diagram-container">
@@ -171,8 +174,8 @@
                 <div class="right"></div>
             </section>
             <section class="description">
-                <span class="month">Mai</span>
-                <span class="score">319/150</span>
+                <span class="expense month">Mai</span>
+                <span class="expense score">319/150</span>
             </section>
         </section>
         <section class="diagram-container">
@@ -181,15 +184,15 @@
                 <div class="right"></div>
             </section>
             <section class="description">
-                <span class="month">Juin</span>
-                <span class="score">290/300</span>
+                <span class="expense month">Juin</span>
+                <span class="expense score">290/300</span>
             </section>
         </section>
     </div>
     <div class="more-infomations"></div>
 </section>
 <!--more-informations-->
-<a class="more-informations">
+<a class="more-informations" id="more-informations-button">
     <span class="title">Plus d'informations</span>
     <span class="material-icons shop">arrow_forward</span>
 </a>

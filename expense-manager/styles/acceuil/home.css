@@ -1,9 +1,10 @@
 
 /*add icon*/
-span.material-icons {
+span.material-icons.add {
     display: flex;
     justify-content: flex-end;
-    margin-top: 12px;
+    margin: 10px 10px;
+    color: var(--secondary-button-color);
 }
 
 /*Target display*/
@@ -49,13 +50,9 @@ section.container-food i.material-icons.store {
 /*List of expenses*/
 section.expenses-lines a.more-informations.lines {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     width: auto;
     color: var(--main-text-color);
-    margin-top: 10px;
-    margin-right: 20px;
-
+    align-items: flex-start;
 }
 section.expenses-lines a.more-informations span.title {
     color: var(--primary-button-color);
@@ -72,8 +69,6 @@ div.types-informations p.title{
 
 div.cards{
     margin-top: 25px;
-    margin-right: 20px;
-    margin-left: 20px;
 }
 
 section.types-expenses.card span.material-icons.shop {
@@ -111,9 +106,17 @@ a.more-informations{
     color: var(--main-text-color);
     margin-top: 10px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 a.more-informations span.title {
     color: var(--primary-button-color);
     font-weight: normal;
+}
+
+section.description span.expense.month {
+    font-weight: 600;
+}
+section.description span.expense.score {
+    font-size: 11px;
 }

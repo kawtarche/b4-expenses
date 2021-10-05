@@ -1,6 +1,12 @@
-// afficher le message ' Hello, ma page web s'est télechargée'
-document.addEventListener('DOMContentLoaded',afficher);
-function afficher() {
-    console.log('Hello, Ma page html est chargé')
-} ;
+import {navigate} from "../util.js";
 
+document.addEventListener('DOMContentLoaded', () => {
+
+const closeIconi = document.getElementById('close-icon');
+
+closeIconi.addEventListener('click', () => {
+
+ navigate("/expense-manager/acceuil/home.html");
+
+})
+})

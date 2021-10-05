@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/budget/details-budget.css">
+    <script type="module" src="../java-scripts/budget/details-budget.js" ></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
     <section class="navigation">
         <span></span>
         <span class="title">Mon budget</span>
-        <span><i class="material-icons">close</i></span>
+        <span id="close-icon"><i class="material-icons">close</i></span>
 
     </section>
     <!-- description-expenses-shop--->
@@ -46,8 +47,8 @@
 
 <!--buttons-->
 <section class="buttons">
-    <a class="submit waves-effect waves-light btn budget-last-months">budgets des mois précédents</a>
-    <a class="submit waves-effect waves-light btn budget-modification">redéfinir mon budget</a>
+    <a class="submit waves-effect waves-light btn budget-last-months" id="history-budgets">budgets des mois précédents</a>
+    <a class="submit waves-effect waves-light btn budget-modification" id="define-budget">redéfinir mon budget</a>
 </section>
 
 

@@ -1,3 +1,5 @@
+import {navigate} from "../util.js";
+
 const options = {
     data: {
         'COCA-COLA': null,
@@ -12,6 +14,9 @@ const options = {
 
 document.addEventListener('DOMContentLoaded', function () {
     const produitInput = document.getElementById('produit');
+    const closeIconi = document.getElementById('close-icon');
+    const ChevronLeftIconi = document.getElementById('chevron-left-icon');
+
 
     M.Autocomplete.init(produitInput, options);
 
@@ -30,6 +35,16 @@ document.addEventListener('DOMContentLoaded', function () {
         detailsExpenses .submit();
 
     })
+    submitInput.addEventListener('click', () => {
+        navigate('/expense-manager/add-expense/details-of-expenses-lines.html');
+    })
+    closeIconi.addEventListener('click', () => {
+        navigate('/expense-manager/acceuil/home.html');
+    })
+    ChevronLeftIconi.addEventListener('click', () => {
+        navigate('/expense-manager/add-expense/add-expense-list.html');
+    })
+
 })
 
 function checkPrice() {
